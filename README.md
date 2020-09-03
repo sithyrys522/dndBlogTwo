@@ -15,7 +15,21 @@ The article just needs to follow a simple format and the templates should pick u
     </div>
 ```
 
+## TODO
+### Bugs
+- [ ] Favicon doesn't load properly
 
+### True TODO
+- [ ] Go Live once we have articles written?
+- [ ] Discuss with team what we want to put in the footer
+- [ ] Character bios / world description section needs to be added
+    - [ ] Jax
+    - [ ] Ember
+    - [ ] Lily
+    - [ ] Melody
+    - [ ] Luna
+    - [ ] Malcom
+    - [ ] THE WORLD
 
 ## Tech
 ### Current Tech Stack
