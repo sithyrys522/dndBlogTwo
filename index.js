@@ -7,6 +7,12 @@ const fs = require('fs');
 const cheerio = require('cheerio');
 const favicon = require('serve-favicon');
 
+/* Creating an array of article data
+Using Nodes built in filesystem module and cheerio the program
+will go through the articles directory and read each file. Since
+the article files are built a specific way this program can read through
+each file and pull out relevant data to aid in creating an array of a 
+title, content, and post number for each article. */
 const articleDir = path.join(__dirname, 'views/articles/');
 let articles = [];
 fs.readdir(articleDir, (err, files) => {
@@ -26,7 +32,7 @@ fs.readdir(articleDir, (err, files) => {
                 number: $('#post-number').text(),
                 date: $('h3').text()
             }
-            articles.splice(post.number - 1, 0, post);
+            articles.splice(post.number - 1, 0, post); //This is putting the articles in a specific order to help with structuring the web page later
         })
     })
 });

@@ -13,6 +13,7 @@
             <%- include('header') %>
             <%- include('home-page') %>
             <% for (var i = articles.length - 1; i >= 0; i--) { %>
+                <!-- This for loop took some effort. After much trial and error it took this wierd for loop and setting up the articles array right to ensure the posts are displayed in order of most recent. -->
                 <div class="card bg-warning text-white border-dark mb-2">
                     <h2 class="card-title"><a href="<%= "/articles/" + articles[i].number %>"><%= articles[i].title %></a></h2>
                     <p><%= articles[i].content %></p>
