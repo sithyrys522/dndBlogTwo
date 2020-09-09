@@ -50,6 +50,10 @@ app.get('/articles/:id', (req, res) => {
     res.render('Article-layout', {id: req.params.id});
 })
 
+app.get('/bios/:bio', (req, res) => {
+    res.render('Bios', {bio: req.params.bio});
+});
+
 app.listen(port, () => {
     console.log(`App listening at http://localhost${port}`);
 })

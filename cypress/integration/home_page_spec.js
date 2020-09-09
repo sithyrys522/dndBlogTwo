@@ -6,10 +6,15 @@ describe('Home page', () => {
         cy.get('li.nav-item')
             .contains('Highlighted Episode')
             .click();
-        
+        cy.get('li.nav-item')
+            .contains('Test')
+            .click();
+
+        //This needs to be the last one clicked!!!    
         cy.get('li.nav-item')
             .contains('Home')
             .click();
+
     });
     it('has a header', () => {
         cy.get('h1')
