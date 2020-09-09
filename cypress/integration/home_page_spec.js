@@ -15,10 +15,11 @@ describe('Home page', () => {
         cy.get('h1')
             .contains("The Blue Knight's Adventures");
     });
-    it('has an article I can visit', () => {
-        cy.get('h2')
-            .first()
+    it('has articles I can visit', () => {
+        cy.get('h2.card-title')
             .children()
-            .click();
-    })
+            .each(($a, index, $as) => {
+                cy.wrap($a).should('have.attr', 'href');
+            });
+    });
 });
