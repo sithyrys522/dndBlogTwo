@@ -1,35 +1,9 @@
+![TBK Logo](./public/images/favicon.ico)
 # My DND Blog Version Two
-This is my second attempt at running at a blog for my DnD group. Before I was using a stack which was utilizing Gatsby. I'm deciding to scale back and do a little more work from scratch for the sake of learning the tech more in depth.
 
-This time I will focusing on using Node and Express as much as I can so I can learn them efficiently. Styling will be partially customized but mostly bootstrap so I don't have to worry as much about it. I do plan on adding a database to handle all the posts but that is again something down the line.
+Welcome to the blog of The Blue Knight's Adventures! This Github repo is for my internal use of developing the blog while simulatenously learning web development. 
 
-## How-Tos for myself
-### New Articles
-Figured out how to get articles to auto-populate on the home page so no need to worry about manually adding them there. Creating a new article is simply creating a new file within the /views/articles/ directory that is incrementally one higher than the previous. (I.E. if the last file was 5.ejs, the next should be 6.ejs)
-
-The article just needs to follow a simple format and the templates should pick up the rest:
-```html
-    <div>
-        <h2>Whatever Article Title You Want</h2>
-        <p>Content for said article goes here</p>
-    </div>
-```
-
-## TODO
-### Bugs
-- [ ] Favicon doesn't load properly
-
-### True TODO
-- [ ] Go Live once we have articles written?
-- [ ] Discuss with team what we want to put in the footer
-- [ ] Character bios / world description section needs to be added
-    - [ ] Jax
-    - [ ] Ember
-    - [ ] Lily
-    - [ ] Melody
-    - [ ] Luna
-    - [ ] Malcom
-    - [ ] THE WORLD
+Through the use of the [wiki](https://github.com/sithyrys522/dndBlogTwo/wiki) and issues tracker I will hopefully be keeping decent documentation of my learning path to refer back to if I need to.
 
 ## Tech
 ### Current Tech Stack
@@ -40,5 +14,5 @@ The article just needs to follow a simple format and the templates should pick u
 ### Planned additions as I learn
 - A database to handle posts (Likely Mongo)
 - Heroku or DO when I push this version live
-- Something to automate deployment because I'm lazy
-- Something to aid in documenting this so I don't forget anything
+- Something to automate deployment because I'm lazy (likely to be a lot of git hooks)
+- Something to aid in documenting this so I don't forget anything (For now, the built in wiki of the repo and tons of issues in the tracker)
