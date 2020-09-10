@@ -1,5 +1,10 @@
+/*
+Custom colors coming from colorhunt.co
+https://colorhunt.co/palette/207323?fbclid=IwAR111qMtWd2XWZKZWznuQ7_V6q2tXayCkicGlV1PfPcfj7Mu8pLr2thHN5U
+*/
+
 body {
-  background-color: green;
+  background-color: #2ec1ac;
 }
 
 .main {
@@ -12,6 +17,14 @@ body {
   bottom: 0;
   left: 0;
   text-align: center;
-  background-color: gold;
+  background-color: #d2e603;
   width: 100%;
+}
+
+.card {
+  background-color: #3e978b;
+}
+
+a {
+  color: #eff48e;
 }
