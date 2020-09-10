@@ -5,6 +5,7 @@ describe("Home page", () => {
   it("can click on navbar links", () => {
     cy.get("li.nav-item").contains("Highlighted Episode").click();
     cy.get("li.nav-item").contains("Test").click();
+    cy.get("li.nav-item").contains("Melody").click();
 
     //This needs to be the last one clicked!!!
     cy.get("li.nav-item").contains("Home").click();
