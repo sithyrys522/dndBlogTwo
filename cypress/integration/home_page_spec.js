@@ -8,6 +8,7 @@ describe("Home page", () => {
     cy.get("li.nav-item").contains("Melody").click();
     cy.get("li.nav-item").contains("Jax").click();
     cy.get("li.nav-item").contains("Lily").click();
+    cy.get("li.nav-item").contains("Ember").click();
 
     //This needs to be the last one clicked!!!
     cy.get("li.nav-item").contains("Home").click();
