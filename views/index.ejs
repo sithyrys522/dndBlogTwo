@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>My App</title>
-        <base href="/">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <%- include('navbar') %>
-        <div class="container-fluid main">
-            <%- include('header') %>
-            <%- include('home-page') %>
-            <% for (var i = articles.length - 1; i >= 0; i--) { %>
-                <!-- This for loop took some effort. After much trial and error it took this wierd for loop and setting up the articles array right to ensure the posts are displayed in order of most recent. -->
-                <div class="card text-white border-dark mb-2">
-                    <h2 class="card-title"><a href="<%= "/articles/" + articles[i].number %>"><%= articles[i].title %></a></h2>
-                    <p><%= articles[i].content %></p>
-                </div>
-            <% } %>
+<head>
+    <meta charset="utf-8">
+    <title>My App</title>
+    <base href="/">
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <%- include('navbar') %>
+    <div class="container-fluid main">
+        <%- include('header') %>
+        <%- include('home-page') %>
+        <% articles.forEach(article => { %>
+        <!-- This for loop took some effort. After much trial and error it took this wierd for loop and setting up the articles array right to ensure the posts are displayed in order of most recent. -->
+        <div class="card text-white border-dark mb-2">
+            <h2 class="card-title"><a href="/articles/<%- article.title %>"><%= article.title %></a>
+            </h2>
+            <p><%= article.content %></p>
+        </div>
+        <% }) %>
         <%- include('footer') %>
-    </body>
+</body>
 </html>
