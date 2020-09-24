@@ -13,10 +13,10 @@ Through the use of the [wiki](https://github.com/sithyrys522/dndBlogTwo/wiki) an
 - NodeJS (Server)
 - ExpressJS (Server)
 - EJS (View-Engine)
+- Mongoose and local MongoDB Server
 
 ### Planned additions as I learn
 
-- A database to handle posts (Likely Mongo)
 - Heroku or DO when I push this version live
 - Something to automate deployment because I'm lazy (likely to be a lot of git hooks)
 - Something to aid in documenting this so I don't forget anything (For now, the built in wiki of the repo and tons of issues in the tracker)
