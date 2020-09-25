@@ -3,8 +3,7 @@ describe("Home page", () => {
     cy.visit("/");
   });
   it("can click on navbar links", () => {
-    cy.get("li.nav-item").contains("Highlighted Episode").click();
-    cy.get("li.nav-item").contains("Test").click();
+    // cy.get("li.nav-item").contains("Highlighted Episode").click();
     cy.get("li.nav-item").contains("Melody").click();
     cy.get("li.nav-item").contains("Jax").click();
     cy.get("li.nav-item").contains("Lily").click();
