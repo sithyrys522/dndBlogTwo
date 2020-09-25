@@ -1,7 +1,7 @@
 const expect = require("chai").expect;
 const request = require("request");
 
-let url = "http://localhost:3000";
+let url = "http://localhost:80";
 
 describe("Page status and content", function () {
   describe("Main page", function () {
