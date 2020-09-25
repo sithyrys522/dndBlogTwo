@@ -14,7 +14,7 @@ describe("Home page", () => {
     cy.get("li.nav-item").contains("Home").click();
   });
   it("has a header", () => {
-    cy.get("h1").contains("The Blue Knight's Adventures");
+    cy.get("h1").contains("The Treasures of Avileia");
   });
   it("has articles I can visit", () => {
     cy.get("h2.card-title")
