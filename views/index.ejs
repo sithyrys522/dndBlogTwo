@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>My App</title>
+    <title>The Treasures of Avileia</title>
     <base href="/">
     <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -14,7 +14,6 @@
     <%- include('navbar') %>
     <div class="container-fluid main">
         <%- include('header') %>
-        <%- include('home-page') %>
         <% articles.forEach(article => { %>
         <!-- This for loop took some effort. After much trial and error it took this wierd for loop and setting up the articles array right to ensure the posts are displayed in order of most recent. -->
         <div class="card text-white border-dark mb-2">
